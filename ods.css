@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.odsHeader{
+  background-image: url("./public/images/co2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 810px;
+
+}
+
+.odsHeader div{
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+  padding-top: 2rem;  
+  align-items: center;
+  
+  }
+
+.odsHeader  div ul{
+  display: flex;
+  justify-content: space-around;
+  width: 15vw;
+}
+
+.odsHeader  a{
+  color: #FFF;
+  text-transform: uppercase;
+  font-family: 'Acme', sans-serif;  
+}
+
+.odsHeader input{
+  width: 125px;
+  height: 24px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 1em;
+  border: none;
+  outline: none;
+}
+
+.odsHeader figure{
+  align-items: center;
+}
+
+main{
+  display: flex;
+}
+
+.TextPrincipal{
+  width: 1257px;
+  height: 213px;
+  color: #141C24;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 136.6%;
+  letter-spacing: 1.955px;
+  margin: 2rem auto;
+}
