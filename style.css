@@ -66,6 +66,8 @@ header h1{
   padding-left: 2rem;
 }
 
+
+
 main{
   background:#FFF ;
   display: flex;
@@ -120,25 +122,3 @@ footer p {
 }
 
 
-footer {
-  background-image: url("./public/images/rodape1.png");
-  height: 706px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-footer p {
-  position: relative;
-  width: 649px;
-  height: 21px;
-  color: #FFF;
-  text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Alata', sans-serif;
-  font-size: 14px;
-  text-align: center;
-  padding-bottom: 1em;
-}
