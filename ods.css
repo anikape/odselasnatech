@@ -55,6 +55,8 @@
 main{
   display: flex;
   flex-direction: column;
+  position: relative; /* Adicionando position relative para posicionar o footer corretamente */
+  z-index: 1; /* Adicionando z-index para manter o conteúdo acima do footer */
 }
 
 .principal{
@@ -82,17 +84,35 @@ padding-top: 5rem;
 .light, .wind, .ocean{
   display: flex;
   background: rgba(146, 184, 125, 0.49);
-  height: 455px;
+  height: 485px;
  
 }
 
+.solarBg{
+  width: 745px;
+height: 455px;
+background-image: url("./public/images/energiaSolar.png");
+background-repeat: no-repeat;
+display: flex;
+justify-content: flex-end;
+align-items: end;
+}
+
+.leave{
+  display: flex;
+  justify-content: flex-end;
+  width: 104px;
+  height: 116px;
+ 
+ 
+}
 
 
 .ligthContent, .oceanContent{
   width: 833px;
   justify-content: flex-end;
   padding-top: 3em;
-  padding-left: 3rem;
+  padding-left: 5rem;
 }
 
 
@@ -164,19 +184,37 @@ text-align: end;
   padding-right: 0;
 }
 
+.eolicaBg{
+  display: flex;
+  width: 839px;
+height:530px;
+background-image: url("./public/images/eolica.png");
+background-repeat: no-repeat;
+margin-left: 22rem;
+background-size: 100% 100%;
+}
+
+.eolicaBg img{
+  display: flex;
+  justify-content: flex-start;
+ margin-left: -15rem;
+ padding-bottom: 3rem;
+}
+
 .ocean{
   margin-top: 2em;
   width: 100%;
   height: 447px;
 }
 
-/* #hidroImg{
- 
-  padding-top: 1rem;
-  padding-left: 6rem;
-  padding-right: 0;
+.bgOcean{
+  width: 826px;
+height: 445px;
+background-image: url("./public/images/mares.png");
+background-repeat: no-repeat;
+}
 
-} */
+
 
 .hidroContainer{
   margin-top: 2em;
@@ -197,8 +235,11 @@ text-align: end;
   background-image: url("./public/images/hidro.png");
   background-repeat: no-repeat;
   background-size: 100% 99%;
+  display: flex;
   width: 624px;
 height: 548px;
+justify-content: flex-end;
+margin-left: 16rem;
 }
 
 #usinaHidrica{
@@ -214,14 +255,15 @@ height: 436px;
 }
 
 .information{
+  height: 190vh;
   background: rgba(146, 184, 125, 0.49);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+/* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 2em;
-padding-top: 36px;
+/* padding-top: 26px; */
 }
 
 .information img{
@@ -243,18 +285,50 @@ height: 292px;
 }
 
 footer {
-  background-image: url("./public/images/rodape1.png");
-  height: 706px;
+  background-image: url("./public/images/footerOds.png");
+  height: 506px;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+ 
+}
+
+footer .house{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -8rem;
+  height: 344px;
+}
+
+footer .one{
+  width: 278px;
+  height: 244px;
+}
+
+footer .two{
+  display: flex;
+  width: 336px;
+height: 282px;
+margin-left: -5rem;
+padding-top: 6rem;
+}
+
+footer .three{
+  width: 415px;
+  height: 344px;
+  margin-top: -3rem;
 }
 
 footer p {
-  position: relative;
+  position: absolute;
+  bottom: 10px; /* Ajuste o valor conforme necessário para controlar o espaçamento */
+  left: 50%;
+  transform: translateX(-50%);
   width: 649px;
   height: 21px;
   color: #FFF;
@@ -264,3 +338,4 @@ footer p {
   text-align: center;
   padding-bottom: 1em;
 }
+
