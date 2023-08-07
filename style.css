@@ -135,7 +135,7 @@ footer p {
     flex-direction: column; /* Altera a direção para coluna */
     justify-content: space-between; /* Espaçamento entre os elementos */
     align-items: center; /* Alinha os itens à esquerda */
-    width: 90vw;
+    width: 100%;
     padding-top: 2rem;
   }
   
