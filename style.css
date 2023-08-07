@@ -124,3 +124,98 @@ footer p {
 }
 
 
+@media (max-width: 480px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  header div {
+    display: flex;
+    flex-direction: column; /* Altera a direção para coluna */
+    justify-content: space-between; /* Espaçamento entre os elementos */
+    align-items: center; /* Alinha os itens à esquerda */
+    width: 90vw;
+    padding-top: 2rem;
+  }
+  
+  header div ul {
+    display: flex;
+    width: 100%; /* Ocupa a largura total da div */
+    justify-content: space-around;
+    padding: 0; /* Remove o espaçamento padrão */
+    margin: 0; /* Remove as margens padrão */
+  }
+
+  header div ul a{
+    justify-content: space-between;
+    padding-left: 1rem;
+  }
+  
+  header input {
+    flex-grow: 1; /* Ocupa o espaço restante na largura */
+    height: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 1em;
+    border: none;
+    outline: none;
+    margin-top: 1rem; /* Adiciona espaçamento entre o input e a imagem */
+  }
+  
+  header figure {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 26px;
+    line-height: 1.2;
+    padding: 150px 1rem 0; /* Ajuste do espaço superior e espaçamento lateral */
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%; /* Defina a largura máxima do título */
+    word-wrap: break-word; /* Quebrar palavras em várias linhas */
+  }
+
+  main {
+    padding-top: 2rem; /* Espaçamento superior reduzido ainda mais para dispositivos móveis */
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+  }
+
+
+
+  .gift img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content p {
+    font-size: 18px; /* Tamanho da fonte reduzido para dispositivos móveis */
+    line-height: 1.4;
+    width: 90%;
+  }
+
+  footer {
+    background-image: url("./public/images/rodape1.png");
+    background-size: contain; /* Ajusta a imagem para cobrir todo o espaço do footer */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    padding-top: 10em;
+    color: #FFF;
+    text-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    word-wrap: break-word; /* Quebra as palavras em várias linhas */
+    max-width: 80%;
+  }
+}
