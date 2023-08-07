@@ -124,12 +124,12 @@ footer p {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
 
   html, body {
     overflow-x: hidden;
   }
-  
+
   header div {
     display: flex;
     flex-direction: column; /* Altera a direção para coluna */
